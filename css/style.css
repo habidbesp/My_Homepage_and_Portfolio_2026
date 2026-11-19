@@ -1,10 +1,63 @@
 /* 1. Reset default spacing */
 /* Global Variables */
 :root {
-  --text-color-light: #f0f0f0;
-  --text-color-dark: #484848;
-  --background-light: #ffffff;
-  --background-dark: #060606;
+  --background-color-1: #292f36;
+  --background-color-2: #1a1e23;
+  --brand-1: #12f7d6;
+  --brand-2: #12f7d6;
+  --grey: #43454d;
+  --white: #ffffff;
+  --html: #e54f26;
+  --css: #0c73b8;
+  --js: #e7a020;
+  --react_: #28a9e0;
+}
+
+/* ubuntu-300 - latin_latin-ext */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../assets//fonts/ubuntu/ubuntu-v21-latin_latin-ext-300.woff2")
+    format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* ubuntu-regular - latin_latin-ext */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../assets/fonts/ubuntu/ubuntu-v21-latin_latin-ext-regular.woff2")
+    format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* ubuntu-500 - latin_latin-ext */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../assets/fonts/ubuntu/ubuntu-v21-latin_latin-ext-500.woff2")
+    format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* ibm-plex-mono-regular - latin_latin-ext_symbols2 */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "IBM Plex Mono";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../assets/fonts/ibm-plex-mono/ibm-plex-mono-v23-latin_latin-ext_symbols2-regular.woff2")
+    format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* ibm-plex-mono-500 - latin_latin-ext_symbols2 */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "IBM Plex Mono";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../assets/fonts/ibm-plex-mono/ibm-plex-mono-v23-latin_latin-ext_symbols2-500.woff2")
+    format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
 *,
@@ -39,7 +92,7 @@ html {
 body {
   font-size: 1.6rem;
   box-sizing: border-box;
-  font-family: "Raleway", Arial, sans-serif;
-  font-weight: 400;
+  font-family: "IBM Plex Mono";
+  font-weight: 500;
   line-height: 1.5;
 }
