@@ -1,0 +1,15 @@
+:root {
+  --font-primary: "Ubuntu", sans-serif;
+  --font-monospace: "IBM Plex Mono", monospace;
+
+  --background-color-1: #292f36;
+  --background-color-2: #1a1e23;
+  --brand-1: #12f7d6;
+  --brand-2: #12f7d6;
+  --grey: #43454d;
+  --white: #ffffff;
+  --html: #e54f26;
+  --css: #0c73b8;
+  --js: #e7a020;
+  --react_: #28a9e0;
+}
