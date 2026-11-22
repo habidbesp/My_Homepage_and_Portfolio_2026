@@ -12,66 +12,71 @@
     <title>Portfolio with a Figma design - grid-layout-css</title>
   </head>
   <body>
-    <div class="page-wrapper">
-      <nav class="sticky-navigation">
-        <ul>
-          <li>
-            <a href="#header">
-              <img src="./assets/icons/icon-grid.svg" alt="icon-grid" />
-            </a>
-          </li>
-          <li>
-            <a href="#about-me">
-              <img src="./assets/icons/icon-user.svg" alt="icon-user" />
-            </a>
-          </li>
-          <li>
-            <a href="#skills">
-              <img src="./assets/icons/icon-code.svg" alt="icon-code" />
-            </a>
-          </li>
-          <li>
-            <a href="#projects">
-              <img src="./assets/icons/icon-monitor.svg" alt="icon-monitor" />
-            </a>
-          </li>
-          <li>
-            <a href="#contact">
-              <img src="./assets/icons/icon-mail.svg" alt="icon-mail" />
-            </a>
-          </li>
-        </ul>
-      </nav>
-      <header id="header">
-        <div class="main-icon">
-          <img src="./assets/icons/HBE.svg" alt="" />
-          <p>Habid B. Espinosa</p>
-        </div>
-
-        <nav>
+    <div class="page-wrapper grid">
+      <div class="nav-container">
+        <nav class="sticky-navigation">
           <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">Projects</a></li>
+            <li>
+              <a href="#header">
+                <img src="./assets/icons/icon-grid.svg" alt="icon-grid" />
+              </a>
+            </li>
+            <li>
+              <a href="#about-me">
+                <img src="./assets/icons/icon-user.svg" alt="icon-user" />
+              </a>
+            </li>
+            <li>
+              <a href="#skills">
+                <img src="./assets/icons/icon-code.svg" alt="icon-code" />
+              </a>
+            </li>
+            <li>
+              <a href="#projects">
+                <img src="./assets/icons/icon-monitor.svg" alt="icon-monitor" />
+              </a>
+            </li>
+            <li>
+              <a href="#contact">
+                <img src="./assets/icons/icon-mail.svg" alt="icon-mail" />
+              </a>
+            </li>
           </ul>
         </nav>
-        <nav>
+      </div>
+      <header id="header">
+        <svg class="brand" role="img" aria-label="Habid Espinosa">
+          <use href="assets/icons/sprites/icon-sprite.svg#icon-brand"></use>
+        </svg>
+        <nav class="nav-internal">
           <ul>
-            <li>
-              <a href="">
-                <img
-                  src="./assets/icons/icon-linkedin.svg"
-                  alt="LinkedIn Icon"
-                />
-                <span>LinkedIn</span>
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <img src="./assets/icons/github.svg" alt="GitHub Icon" />
-                <span>GitHub</span>
-              </a>
-            </li>
+            <li><a href="#header">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
           </ul>
+        </nav>
+        <nav class="social-media">
+          <a
+            href="https://github.com/habidbesp"
+            target="_blank"
+            aria-label="GitHub"
+          >
+            <svg aria-hidden="true">
+              <use
+                href="assets/icons/sprites/icon-sprite.svg#icon-github"
+              ></use>
+            </svg>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/habidespinosa/"
+            target="_blank"
+            aria-label="linkedin"
+          >
+            <svg aria-hidden="true">
+              <use
+                href="assets/icons/sprites/icon-sprite.svg#icon-linkedin"
+              ></use>
+            </svg>
+          </a>
         </nav>
       </header>
       <main>
