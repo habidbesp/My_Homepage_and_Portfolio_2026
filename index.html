@@ -4,15 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="./css/fonts.css" />
-    <link rel="stylesheet" href="./css/variables.css" />
-    <link rel="stylesheet" href="./css/reset.css" />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/main.css" />
 
     <title>Portfolio with a Figma design - grid-layout-css</title>
   </head>
   <body>
-    <div class="page-wrapper grid">
+    <div class="page-wrapper">
       <div class="nav-container">
         <nav class="sticky-navigation">
           <ul>
@@ -59,23 +56,32 @@
             href="https://github.com/habidbesp"
             target="_blank"
             aria-label="GitHub"
+            class="social-media-link"
           >
-            <svg aria-hidden="true">
-              <use
-                href="assets/icons/sprites/icon-sprite.svg#icon-github"
-              ></use>
-            </svg>
+            <div class="social-icon-wrapper">
+              <svg aria-hidden="true" class="social-icon">
+                <use
+                  href="assets/icons/sprites/icon-sprite.svg#icon-github"
+                ></use>
+              </svg>
+            </div>
+
+            <span>GitHub</span>
           </a>
           <a
             href="https://www.linkedin.com/in/habidespinosa/"
             target="_blank"
             aria-label="linkedin"
+            class="social-media-link"
           >
-            <svg aria-hidden="true">
-              <use
-                href="assets/icons/sprites/icon-sprite.svg#icon-linkedin"
-              ></use>
-            </svg>
+            <div class="social-icon-wrapper">
+              <svg aria-hidden="true" class="social-icon">
+                <use
+                  href="assets/icons/sprites/icon-sprite.svg#icon-linkedin"
+                ></use>
+              </svg>
+            </div>
+            <span>Linkedin</span>
           </a>
         </nav>
       </header>

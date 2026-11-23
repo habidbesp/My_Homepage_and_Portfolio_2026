@@ -1,0 +1,12 @@
+.nav-container {
+  padding-top: 4rem;
+  padding-left: 4rem;
+  grid-area: nav-container;
+}
+
+.sticky-navigation {
+  position: sticky;
+  top: 4rem;
+  align-self: start;
+  z-index: 100;
+}

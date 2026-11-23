@@ -1,0 +1,20 @@
+.page-wrapper {
+  background-color: var(--bg-1);
+  max-width: 120em;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 8rem 1fr 8rem;
+  grid-template-rows: auto auto auto;
+  grid-template-areas:
+    ". header ."
+    "nav-container main ."
+    "footer footer footer ";
+}
+
+main {
+  grid-area: main;
+}
+
+footer {
+  grid-area: footer;
+}

@@ -1,0 +1,83 @@
+header {
+  font-size: 1.5rem;
+  background-color: var(--bg-1);
+  padding: 4rem 0;
+  font-family: var(--font-monospace);
+  font-weight: var(--font-regular);
+
+  grid-area: header;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+}
+
+.brand {
+  width: 23.3125rem;
+  height: 2.625rem;
+  align-self: center;
+  justify-self: start;
+}
+
+.nav-internal ul {
+  width: fit-content;
+  justify-self: end;
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
+  gap: 2rem;
+}
+
+.nav-internal ul a {
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-internal ul a:hover {
+  color: var(--brand-1);
+}
+
+.social-media {
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
+  gap: 2rem;
+  justify-self: end;
+}
+
+.social-media-link {
+  font-size: 1rem;
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
+  gap: 0.5rem;
+  align-items: end;
+}
+
+.social-media-link > span {
+  line-height: 1.3;
+  transition: color 0.3s linear;
+}
+
+.social-media-link:hover > span {
+  color: var(--brand-1);
+}
+
+.social-icon-wrapper {
+  width: fit-content;
+  height: fit-content;
+  padding: 0.2rem;
+  border-radius: 0.4rem;
+  transition: background-color 0.3s linear;
+}
+
+.social-media-link:hover .social-icon-wrapper {
+  background-color: var(--brand-1);
+}
+
+.social-icon {
+  width: 1.25rem;
+  aspect-ratio: 1;
+  color: var(--brand-1);
+  transition: color 0.3s linear;
+}
+
+.social-media-link:hover .social-icon {
+  color: var(--bg-1);
+}
