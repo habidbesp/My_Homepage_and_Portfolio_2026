@@ -7,3 +7,28 @@
 @import url(./layout/navigation.css);
 @import url(./layout/header.css);
 @import url(./layout/grid-system.css);
+
+.hero {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(2, auto);
+  grid-template-areas:
+    "title title title"
+    "presentation-card-container hero-content highlights-container";
+}
+
+.main-title {
+  grid-area: title;
+}
+
+.presentation-card-container {
+  grid-area: presentation-card-container;
+}
+
+.hero-content {
+  grid-area: hero-content;
+}
+
+.highlights-container {
+  grid-area: highlights-container;
+}
