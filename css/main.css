@@ -9,6 +9,8 @@
 @import url(./layout/grid-system.css);
 
 .hero {
+  padding: 4rem 0 8rem;
+
   display: grid;
   grid-template-columns: repeat(3, auto);
   grid-template-rows: repeat(2, auto);
@@ -19,10 +21,36 @@
 
 .main-title {
   grid-area: title;
+  margin: 0 auto 4rem auto;
+}
+
+.main-title h1 {
+  font-weight: var(--font-regular);
+  font-size: 7.3125rem;
+  line-height: 1.1453;
 }
 
 .presentation-card-container {
+  padding: 0 4rem;
   grid-area: presentation-card-container;
+}
+
+.presentation-card {
+  padding: 1.5rem;
+  border: 0.25rem solid var(--white);
+  border-radius: 7.25rem 0;
+}
+
+.programmer-illustration {
+  margin: auto;
+  width: 6rem;
+  aspect-ratio: 1;
+  border: 0.3rem solid var(--brand-1);
+  border-radius: 50%;
+  background-image: url(../assets/images/programmer.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .hero-content {
